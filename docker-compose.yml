@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  api1:
+    build: ./api1
+    ports:
+      - "5055:5055"
+    depends_on:
+      - api2
+
+  api2:
+    build: ./api2
+    ports:
+      - "6066:6066"
