@@ -1,0 +1,7 @@
+### Test API2 directly
+GET http://localhost:6066/hello
+Accept: application/json
+
+### Test API1 (proxy to API2)
+GET http://localhost:5055/proxy
+Accept: application/json
